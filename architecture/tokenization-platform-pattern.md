@@ -47,7 +47,7 @@ flowchart TB
 
 ## Vendor / build
 
-- Build: Foundry + OpenZeppelin + custom
+- Build: Hardhat + OpenZeppelin + custom
 - Buy: Tokeny (T-REX), Securitize, Fireblocks Tokenization, Onyx (JPM internal)
 
 ## Linked

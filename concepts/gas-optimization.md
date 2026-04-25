@@ -13,7 +13,8 @@ Reducing gas cost is core engineering discipline.
 
 ## Tools
 
-- Foundry `forge test --gas-report`
+- Hardhat `npx hardhat test` (via hardhat-gas-reporter plugin)
+- Foundry `forge test --gas-report` (alternative)
 - Hardhat gas reporter
 
 ## Linked

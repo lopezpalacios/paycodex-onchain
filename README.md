@@ -9,7 +9,7 @@ Open-source documentation graph for building cash management products on EVM-bas
 ## What this is
 
 - **5 foundation notes** — DLT primer, EVM stack, cash legs comparison, bank integration, compliance
-- **37 concept atoms** — Solidity, Foundry, OpenZeppelin, AA, MPC, oracles, bridges, indexers, security patterns
+- **37 concept atoms** — Solidity, Hardhat, OpenZeppelin, AA, MPC, oracles, bridges, indexers, security patterns
 - **12 ERC standards deep dives** — ERC-20, 721, 1155, 1400, 3643 (T-REX), 4626, 4337 (AA), 2535 (Diamond), 2612 (permit), 7281 (xERC20), 1967
 - **15 platforms** — Ethereum L1, Base, Arbitrum, Optimism, zkSync, Polygon, Linea, Besu, Quorum, Canton EVM, Fabric, Corda
 - **5 cash leg types** — stablecoin, tokenized deposit, wholesale CBDC, retail CBDC, tokenized MMF — full comparison matrix
@@ -53,7 +53,7 @@ npx hardhat test
 |---|---|
 | DLT newcomer | [`01-dlt-fundamentals.md`](01-dlt-fundamentals.md) → [`02-evm-stack.md`](02-evm-stack.md) → use case 001 |
 | Cash mgmt expert | [`03-cash-legs-comparison.md`](03-cash-legs-comparison.md) → pick adjacent use case |
-| Engineer | [`code/README.md`](code/README.md) → run snippets in Foundry |
+| Engineer | [`code/README.md`](code/README.md) → run snippets in Hardhat |
 | Architect | [`04-bank-integration-stack.md`](04-bank-integration-stack.md) → [`architecture/bank-dlt-rail-pattern.md`](architecture/bank-dlt-rail-pattern.md) |
 | Compliance | [`05-compliance-stack.md`](05-compliance-stack.md) → [`compliance/`](compliance/) |
 | Strategist | [`prompt.md`](prompt.md) + [`EXECUTIVE-DECK.md`](EXECUTIVE-DECK.md) |

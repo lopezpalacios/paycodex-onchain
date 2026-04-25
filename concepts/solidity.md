@@ -11,7 +11,7 @@ Statically typed compiled language for EVM. Most-used smart contract language.
 
 - All ERC standards implemented in Solidity
 - OpenZeppelin contracts (audited library) — use as base, extend
-- Foundry / Hardhat for build + test
+- Hardhat (default) / Foundry for build + test
 
 ## Linked
 

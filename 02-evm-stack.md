@@ -24,7 +24,7 @@ flowchart TB
 | Layer | Tech |
 |---|---|
 | Smart contract | Solidity 0.8.x · Vyper |
-| Build / test | Foundry · Hardhat |
+| Build / test | Hardhat (default) · Foundry |
 | Wallets | EOA · Smart contract (ERC-4337 AA) · Multisig (Gnosis Safe) |
 | Standards | ERC-20/721/1155/1400/3643/4626/4337/2535/2612/7281 |
 | Indexing | The Graph · Ponder · custom |
