@@ -18,7 +18,7 @@ Open-source documentation graph for building cash management products on EVM-bas
 - **7 architecture patterns** — bank-DLT rail, tokenization platform, multi-chain treasury, permissioned-public bridge, atomic DvP, gasless paymaster
 - **6 ADRs** — public vs permissioned, cash leg strategy, T-REX vs 1400, multi-chain, AA, build vs Tokeny
 - **Top 100 ranked use cases** — easy → hard
-- **24 runnable Solidity snippets** — Foundry-compatible, OZ 5.x
+- **24 runnable Solidity snippets** — Hardhat-compatible, OZ 5.x
 
 ## Quick start — run a snippet
 
@@ -26,21 +26,21 @@ Open-source documentation graph for building cash management products on EVM-bas
 git clone https://github.com/lopezpalacios/paycodex-onchain
 cd paycodex-onchain
 
-# Install Foundry if not present
-curl -L https://foundry.paradigm.xyz | bash
-foundryup
+# Set up a Hardhat project
+mkdir ../demo && cd ../demo
+npm init -y
+npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+npm install @openzeppelin/contracts
+npx hardhat init   # pick "Create a TypeScript project"
 
-# Set up demo project
-forge init demo
-cd demo
-forge install OpenZeppelin/openzeppelin-contracts
-
-# Copy a snippet
-cp ../code/01-erc20-transfer.sol src/
+# Copy reference config + a snippet + sample test
+cp ../paycodex-onchain/code/hardhat.config.ts hardhat.config.ts
+cp ../paycodex-onchain/code/01-erc20-transfer.sol contracts/
+cp ../paycodex-onchain/code/sample.test.ts test/
 
 # Build + test
-forge build
-forge test
+npx hardhat compile
+npx hardhat test
 ```
 
 ## Master prompt
@@ -123,7 +123,7 @@ marp EXECUTIVE-DECK.md --pptx -o exec.pptx
 
 ## Stack
 
-Solidity 0.8.20+ · Foundry · OpenZeppelin 5.x · Ethereum L1 + Base + Arbitrum + Polygon · Hyperledger Besu (permissioned) · Tokeny T-REX · Chainlink oracles · Notabene Travel Rule
+Solidity 0.8.20+ · Hardhat · TypeScript · ethers.js v6 · OpenZeppelin 5.x · Ethereum L1 + Base + Arbitrum + Polygon · Hyperledger Besu (permissioned) · Tokeny T-REX · Chainlink oracles · Notabene Travel Rule
 
 ## Contributing
 

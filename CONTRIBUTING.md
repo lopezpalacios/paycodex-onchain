@@ -77,6 +77,6 @@ By contributing you agree to license your contribution under MIT (code) and CC-B
 - [ ] Files in correct dir
 - [ ] Cross-links present and tested (no broken `[[...]]`)
 - [ ] Mermaid diagrams render
-- [ ] Solidity snippets compile (`forge build`)
+- [ ] Solidity snippets compile (`npx hardhat compile`)
 - [ ] No personal data, no internal-only references
 - [ ] No marketing language

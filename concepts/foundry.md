@@ -1,43 +1,23 @@
 # Foundry
 
-Solidity toolkit. Forge (test), Cast (CLI), Anvil (local node), Chisel (REPL).
+Solidity toolkit (Forge / Cast / Anvil / Chisel). Rust-based. Tests in Solidity, fast, fuzz built in.
 
-## Key features
+## Strengths
 
-- Tests written in Solidity (not JS like Hardhat)
-- Fast (Rust-based)
-- Fuzz testing built-in
-- Invariant testing
-- Mainnet forking
+- Native Solidity testing (no JS bridge)
+- Fastest compile + test cycle
+- Mainnet forking + invariant testing built in
+- Preferred by protocol engineers + auditors
 
-## Use for cash mgmt demos
+## In this repo
 
-- Snippets in this graph designed to run via `forge test`
-- Mainnet fork = test against real USDC, real Uniswap
+Snippets in [[../code/README]] target **[[hardhat]]** by default for demo purposes (broad familiarity, JS/TS toolchain, easier integration with corp CI). Snippets are framework-agnostic Solidity — they compile fine under Foundry too:
 
-## Sample test
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-import {Test} from "forge-std/Test.sol";
-import {BankIssuedToken} from "../src/BankIssuedToken.sol";
-
-contract BankIssuedTokenTest is Test {
-    BankIssuedToken token;
-    address treasurer = address(0x1);
-    address user = address(0x2);
-
-    function setUp() public {
-        token = new BankIssuedToken("BankUSD", "BUSD");
-    }
-
-    function testMint() public {
-        token.mint(user, 1_000_000e18);
-        assertEq(token.balanceOf(user), 1_000_000e18);
-    }
-}
+```bash
+forge init demo && cd demo
+forge install OpenZeppelin/openzeppelin-contracts
+cp ../paycodex-onchain/code/01-erc20-transfer.sol src/
+forge build && forge test
 ```
 
 ## Linked

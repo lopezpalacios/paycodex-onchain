@@ -5,7 +5,7 @@ pragma solidity ^0.8.20;
 // Mirrors a tokenized commercial bank deposit (e.g., DCHF, EURCV, JPMD).
 //
 // Stack: OpenZeppelin Contracts v5.x
-// To run: forge install OpenZeppelin/openzeppelin-contracts && forge build
+// To run: npm install @openzeppelin/contracts To run: forge install OpenZeppelin/openzeppelin-contracts && forge buildTo run: forge install OpenZeppelin/openzeppelin-contracts && forge build npx hardhat compile
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import {ERC20Pausable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
