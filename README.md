@@ -117,6 +117,19 @@ marp EXECUTIVE-DECK.md --pptx -o exec.pptx
 
 [Full comparison matrix](cash-legs/comparison-matrix.md)
 
+
+## Companion factory repo
+
+[`paycodex-factory`](https://github.com/lopezpalacios/paycodex-factory) — runnable Hardhat project with the same snippets, TypeScript tests, gas reports, and GitHub Actions CI. Tested gas costs feed back into [code/RESULTS.md](https://github.com/lopezpalacios/paycodex-factory/blob/main/RESULTS.md).
+
+```mermaid
+flowchart LR
+    KG1[paycodex<br/>incumbent rails KG] -->|references| Factory
+    KG2[paycodex-onchain<br/>EVM patterns KG<br/>this repo] -->|sources snippets| Factory[paycodex-factory<br/>Hardhat + TS + CI]
+    Factory -->|gas, coverage, test results| Feedback[(RESULTS.md)]
+    Feedback --> KG2
+```
+
 ## Companion incumbent graph
 
 [`paycodex`](https://github.com/) — incumbent CH/EU/UK rails (SCT Inst, SDD, QR-bill, CHAPS, FPS, T2S DvP, etc.). Every use case here cross-links to its incumbent equivalent there.

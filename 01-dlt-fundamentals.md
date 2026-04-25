@@ -33,3 +33,7 @@ Compare to incumbent rails: [[../paycodex/comparisons/rails-matrix]]
 ## Linked
 
 [[02-evm-stack]] · [[03-cash-legs-comparison]] · [[concepts/ethereum-l1]] · [[concepts/permissioned-chains]]
+
+## Runnable companion
+
+For executable demos see [`paycodex-factory`](https://github.com/lopezpalacios/paycodex-factory) — Hardhat project with TypeScript tests, gas reports, GitHub Actions CI.

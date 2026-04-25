@@ -50,3 +50,7 @@ Compare to incumbent rails tech: [[../paycodex/03-tech-integration]]
 ## Linked
 
 [[platforms/ethereum-l1]] · [[platforms/base]] · [[platforms/besu]] · [[concepts/foundry]] · [[concepts/account-abstraction]]
+
+## Runnable companion
+
+For executable demos see [`paycodex-factory`](https://github.com/lopezpalacios/paycodex-factory) — Hardhat project with TypeScript tests, gas reports, GitHub Actions CI.
