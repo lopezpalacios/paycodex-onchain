@@ -122,12 +122,18 @@ marp EXECUTIVE-DECK.md --pptx -o exec.pptx
 
 [`paycodex-factory`](https://github.com/lopezpalacios/paycodex-factory) — runnable Hardhat project with the same snippets, TypeScript tests, gas reports, and GitHub Actions CI. Tested gas costs feed back into [code/RESULTS.md](https://github.com/lopezpalacios/paycodex-factory/blob/main/RESULTS.md).
 
+## Companion rules PoC
+
+[`paycodex-rules-poc`](https://github.com/lopezpalacios/paycodex-rules-poc) — rule-driven interest-bearing deposit factory. Hardhat + AssemblyScript WASM (browser-runnable preview) + local Besu IBFT2 via Docker. 8 canonical interest rules (simple, compound, tiered, floating, KPI-linked, floor/cap, two-track ECR, CH withholding). WASM previews are parity-tested against the Solidity strategies. Implements [[architecture/programmable-interest-pattern]] + [[architecture/rule-driven-deployment-pattern]].
+
 ```mermaid
 flowchart LR
     KG1[paycodex<br/>incumbent rails KG] -->|references| Factory
     KG2[paycodex-onchain<br/>EVM patterns KG<br/>this repo] -->|sources snippets| Factory[paycodex-factory<br/>Hardhat + TS + CI]
     Factory -->|gas, coverage, test results| Feedback[(RESULTS.md)]
     Feedback --> KG2
+    KG1 -->|rule schema| Rules[paycodex-rules-poc<br/>WASM + Solidity + Besu]
+    KG2 -->|patterns + ADRs| Rules
 ```
 
 ## Companion incumbent graph

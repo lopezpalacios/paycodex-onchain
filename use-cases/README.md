@@ -82,7 +82,13 @@ Ranked easiest → hardest. Each links to its incumbent equivalent in [[../../pa
 | 059 | Whitelist via off-chain attestation (EAS) | [[../../paycodex/concepts/kyc-aml]] | EAS |
 | 060 | ZK-KYC | [[../../paycodex/concepts/kyc-aml]] | zk-snark |
 | 061 | Merkle airdrop (bulk) | [[../../paycodex/concepts/sepa-sct]] | merkle proof |
-| 062 | Compound interest accruing on token | n/a | ERC-4626 |
+| 062 | Interest-bearing deposit (per-second linear) | [[../../paycodex/concepts/interest-calculation]] | ERC-20 + custom — see [code/62-interest-bearing-deposit.sol](../code/62-interest-bearing-deposit.sol) ✅ |
+| 062b | Compound deposit pool (Aave-style index) | [[../../paycodex/concepts/interest-calculation]] | RAY index — see [code/62b-compound-deposit.sol](../code/62b-compound-deposit.sol) ✅ |
+| 062c | Multi-tier rate-source router | [[../../paycodex/concepts/reference-rates]] | oracle composition — see [code/62c-rate-source-router.sol](../code/62c-rate-source-router.sol) ✅ |
+| 062d | Rule registry (rule-driven deployment) | n/a | factory pattern — see [code/62d-rule-registry.sol](../code/62d-rule-registry.sol) ✅ |
+| 062e | Deposit factory | n/a | factory pattern — see [code/62e-deposit-factory.sol](../code/62e-deposit-factory.sol) ✅ |
+| 062f | Tiered-rate deposit (marginal bands) | [[../../paycodex/concepts/account-tier]] | custom — see [code/62f-tiered-rate-deposit.sol](../code/62f-tiered-rate-deposit.sol) ✅ |
+| 062g | Floor/cap floating deposit | [[../../paycodex/concepts/negative-interest]] | oracle + bounds — see [code/62g-floor-cap-deposit.sol](../code/62g-floor-cap-deposit.sol) ✅ |
 | 063 | Variable rate stablecoin (rebasing) | n/a | ERC-20 rebase |
 | 064 | Auto-rebalancing treasury vault | [[../../paycodex/concepts/sweep]] | ERC-4626 |
 | 065 | Permissioned-public bridge | [[../../paycodex/processes/originate-cross-border-wire]] | bridge |
