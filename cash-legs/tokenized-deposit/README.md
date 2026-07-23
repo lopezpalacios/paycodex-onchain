@@ -31,3 +31,16 @@ Use this as a self-assessment checklist during the build phase and as a control 
 ## Cross-links
 
 Back to parent: [`../tokenized-deposit.md`](../tokenized-deposit.md) · Cash leg comparison: [`../comparison-matrix.md`](../comparison-matrix.md) · Strategy decision: [`../../decisions/0002-cash-leg-strategy.md`](../../decisions/0002-cash-leg-strategy.md)
+
+
+## Related notes (reconnected cash-legs/tokenized-deposit)
+- [[01-technical]]
+- [[02-regulatory]]
+- [[03-compliance-aml-kyc]]
+- [[04-operational]]
+- [[05-legal-contractual]]
+- [[06-risk-capital]]
+- [[07-integration-core-banking]]
+- [[08-governance-controls]]
+- [[09-data-reporting]]
+- [[10-security-cyber]]

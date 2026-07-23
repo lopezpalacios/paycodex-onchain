@@ -31,3 +31,16 @@ The bar is broadly: prudential standing with the home regulator, integration wit
 ## Cross-links
 
 Back to parent: [`../wholesale-cbdc.md`](../wholesale-cbdc.md) · Cash-leg comparison: [`../comparison-matrix.md`](../comparison-matrix.md) · Strategy: [`../../decisions/0002-cash-leg-strategy.md`](../../decisions/0002-cash-leg-strategy.md)
+
+
+## Related notes (reconnected cash-legs/wholesale-cbdc)
+- [[01-technical]]
+- [[02-regulatory]]
+- [[03-compliance-aml-kyc]]
+- [[04-operational]]
+- [[05-legal-contractual]]
+- [[06-risk-capital]]
+- [[07-rtgs-and-fmi-integration]]
+- [[08-governance-controls]]
+- [[09-data-reporting]]
+- [[10-security-cyber]]

@@ -152,3 +152,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - **Code** (Solidity, scripts) — [MIT](LICENSE)
 - **Documentation** (markdown) — [CC-BY-SA-4.0](LICENSE-DOCS)
+
+
+## Related notes (reconnected .)
+- [[NEXT-STEPS]]
+- [[prompt]]
